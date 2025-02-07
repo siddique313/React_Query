@@ -18,16 +18,17 @@ function FetchIndev() {
       </h1>
     );
   return (
-    <div className="w-full text-center">
-      <div className="text-white">
-        <h1>individual ID No: {id}</h1>
+    <section className="w-full flex justify-center my-8">
+      <div className="bg-gray-800 text-white rounded-lg shadow-lg p-6 space-y-4 border-l-2 border-white max-w-96 flex flex-col justify-center items-center">
+        <div className="">
+          <h1>individual ID No: {id}</h1>
+        </div>
+        <div className="px-6 py-4 text-white">
+          <p className="font-bold text-xl mb-2 ">{data?.title}</p>
+          <p className="text-base">{data?.body}</p>
+        </div>
       </div>
-      <div className="text-white">
-        <p>{data?.id}</p>
-        <p>{data?.title}</p>
-        <p>{data?.body}</p>
-      </div>
-    </div>
+    </section>
   );
 }
 
